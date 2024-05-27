@@ -1,0 +1,33 @@
+@keyframes changeBackground {
+    0% { background-image: url("https://wallpapers.com/images/hd/saint-george-mansion-in-utah-btaf8adubnt7r3g8.jpg"); }
+    25% { background-image: url("https://img.freepik.com/premium-photo/modern-house-with-black-brown-walls_136558-8090.jpg"); }
+    50%{
+        background-image: url("https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg");
+    }
+    75%{
+        background-image: url("https://img.freepik.com/free-photo/3d-house-model-with-modern-architecture_23-2151004024.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716249600&semt=ais_user");
+    }
+    /* https://www.zestmelange.com/cdn/shop/files/zest_banner_2.png?v=1632722327 */
+    100% { background-image: url("https://img.freepik.com/free-photo/3d-electric-car-building_23-2148972401.jpg?t=st=1716646351~exp=1716649951~hmac=d0512f39d3803e3f90f4b0e669b9eaf4ffcc072d1355947b6670dfaad18da912&w=1060"); }
+}
+
+/* Apply animation to .banner element */
+.banner {
+    width: 100%;
+    height: 91.2vh;
+    background-size: cover;
+    animation: changeBackground 10s infinite; /* Change image every 3 seconds */
+}
+
+@media only screen and (max-width: 1000px) {
+    .banner {
+        height: 500px;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        height: 200px;
+    }
+  }
+  
